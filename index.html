@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gemini Chat UI</title>
+
+<link rel="stylesheet"
+ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="app-header">
+        <div class="header-row">
+            <img src="gemini-chatbot-logo.svg" class="gemini-logo">
+            <div>
+                <h1 class="heading">Hello, there</h1>
+                <h2 class="sub-heading">How can I help you today?</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- SUGGESTIONS -->
+    <ul class="suggestions">
+        <li data-text="Design a home office setup for remote work under $500">
+            Design a home office setup for remote work under $500.
+        </li>
+        <li data-text="How can I level up my web development expertise in 2025">
+            How can I level up my web development expertise in 2025?
+        </li>
+        <li data-text="Suggest some useful tools for debugging JavaScript code">
+            Suggest some useful tools for debugging JavaScript code.
+        </li>
+        <li data-text="Create a React JS component for a simple todo list app">
+            Create a React JS component for a simple todo list app.
+        </li>
+    </ul>
+
+    <!-- CHAT -->
+    <div class="chats"></div>
+
+    <!-- INPUT BAR -->
+    <div class="input-bar">
+        <input type="text" id="prompt" placeholder="Message Gemini">
+
+        <input type="file" id="file-input" hidden accept="image/*">
+
+        <button id="attach-btn" class="material-symbols-rounded">
+            attach_file
+        </button>
+
+        <button id="send-btn" class="material-symbols-rounded">
+            arrow_upward
+        </button>
+
+        <button id="theme-btn" class="material-symbols-rounded">
+            light_mode
+        </button>
+
+        <button id="delete-btn" class="material-symbols-rounded">
+            delete
+        </button>
+    </div>
+</div>
+ <p class="disclaimer-text">Gemini can make mistake, so double-check</p>
+
+<script src="script.js"></script>
+</body>
+</html>
